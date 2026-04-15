@@ -1,0 +1,115 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #27ae60;
+}
+
+/* MAIN BACKGROUND */
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1506521781263-d8422e82f27a') no-repeat center center/cover;
+    position: relative;
+}
+
+/* OVERLAY */
+.main::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+/* HERO CARD */
+.hero {
+    position: relative;
+    z-index: 1;
+    background: rgba(255,255,255,0.1);
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    color: white;
+    max-width: 600px;
+}
+
+/* BUTTON */
+.btn {
+    padding: 12px 25px;
+    background: #27ae60;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #219150;
+    transform: scale(1.08);
+}
+
+/* FORM CARD */
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* INPUT */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+}
